@@ -1,8 +1,10 @@
-import React from 'react';
+import React,{FC} from 'react';
 
 import './App.css';
+import { PersonDetails } from './components/Person';
 
-function App() {
+//Function Component is defined using the FC keyword
+const App: FC = ()=> {
   const name: string = 'Prudhvi';
   const age: number = 25;
   const isMarried: boolean = false;
@@ -18,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <p> {name} is {age} years old and {isMarried ? 'married' : 'not married'}</p>
+      <PersonDetails name='Prudhvi' age={20} email={'prudhviemail@gmail.com'} />
     </div>
   );
 }
