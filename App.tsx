@@ -1,7 +1,7 @@
 import React,{FC} from 'react';
 
 import './App.css';
-import { PersonDetails } from './components/Person';
+import { Person1,Person2 } from './components/Person';
 
 //Function Component is defined using the FC keyword
 const App: FC = ()=> {
@@ -20,7 +20,8 @@ const App: FC = ()=> {
   return (
     <div className="App">
       <p> {name} is {age} years old and {isMarried ? 'married' : 'not married'}</p>
-      <PersonDetails name='Prudhvi' age={20} email={'prudhviemail@gmail.com'} />
+      <Person1 name='Prudhvi' age={20} email={'prudhviemail@gmail.com'} />
+      <Person2 name='Prudhvi Reddy' age={25} email={'prudhviemail2@gmail.com'} />
     </div>
   );
 }
