@@ -14,7 +14,7 @@ const AppContext = createContext<AppContextInterface | null> (null)
 
 //Function Component is defined using the FC keyword
 const App: FC = ()=> {
-  const name: string = 'Prudhvi';
+  const name:= 'Prudhvi';
   const age: number = 25;
   const isMarried: boolean = false;
 
